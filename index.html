@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<title>V!Books</title>
+
+<link rel="stylesheet" href="try1.css" type="text/css" />
+</head>
+
+<body>
+<div>
+    <nav class="header">
+        <ul>
+           <li>
+                <a href="index.html"><label class="nav-item">Home</label></a>
+           </li>
+        </ul>
+
+        <ul>
+           <li>
+                <a href="library.html"><label class="nav-item">Library</label></a>
+           </li>
+        </ul>
+		
+		<ul>
+           <li>
+                <a href="signin.html"><label class="nav-item">Sell Your Book</label></a>
+           </li>
+        </ul>
+
+        <ul>
+          <li>
+                <a href="signin.html"><label class="right">Sign in</label></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="signup.html"><label class="right" >Sign up</label></a>
+          </li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="mainslide">
+  <img class="mySlides" src="hd7.jpg" >
+  <img class="mySlides" src="hd4.jpg" >
+  <img class="mySlides" src="hd3.jpg" >
+  <img class="mySlides" src="hd5.jpg" >
+</div>
+<!--
+<div class="info">
+<div class="prop">
+Eliminate the middle man & know your seller.
+</div>
+<div class="prop">
+Hastle-free Process with filtered search.
+</div>
+<div class="prop">
+Variety of books of all categories.
+</div>
+</div>
+-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
